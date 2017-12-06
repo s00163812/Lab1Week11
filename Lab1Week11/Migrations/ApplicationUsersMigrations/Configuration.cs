@@ -1,19 +1,19 @@
-namespace Lab1Week11.Migrations.ClubContext
+namespace Lab1Week11.Migrations.ApplicationUsersMigrations
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Lab1Week11.Models.ClubModel.ClubContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<Lab1Week11.Models.ApplicationDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            MigrationsDirectory = @"Migrations\ClubContext";
+            MigrationsDirectory = @"Migrations\ApplicationUsersMigrations";
         }
 
-        protected override void Seed(Lab1Week11.Models.ClubModel.ClubContext context)
+        protected override void Seed(Lab1Week11.Models.ApplicationDbContext context)
         {
             //  This method will be called after migrating to the latest version.
 
